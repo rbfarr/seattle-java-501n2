@@ -227,6 +227,12 @@ public class App
         Math.ceil(5.4);
 
         random();
+
+        String s = "my string";
+
+        for (i = 0; i < s.length(); i++) {
+            System.out.println(s.charAt(i));
+        }
     }
 
     private static void printIntsArray(int[] myInts) {

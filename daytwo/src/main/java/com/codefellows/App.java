@@ -42,5 +42,8 @@ public class App
 //        Person.Builder pb = new Person.Builder();
 
         WebClient wc = new WebClient(new MobileDeviceWebService());
+
+        IComplexWebService.getNumberOfWebServices();
+        System.out.println(IComplexWebService.MAX_NUM_SERVICES);
     }
 }
