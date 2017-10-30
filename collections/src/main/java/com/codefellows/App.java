@@ -94,13 +94,7 @@ public class App
         try {
             exceptionsDemo();
         } catch (Exception ex) {
-            Throwable t = null;
 
-            if (t != null) {
-                System.out.println(t.getMessage());
-            } else {
-                System.out.println(ex.getMessage());
-            }
         }
     }
 
@@ -116,7 +110,7 @@ public class App
             System.out.println("Arithmetic exception");
             throw ex;
         } catch (RuntimeException ex) {
-            throw ex;
+            throw new CodeFellowsException("some message", ex);
             //System.out.println("Runtime exception");
         } catch (Exception ex) {
             System.out.println(ex.getMessage());
